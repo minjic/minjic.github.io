@@ -1,0 +1,271 @@
+@import "./reset.css";
+
+/* COMMON */
+.title__font {
+  font-family: 'Raleway'; 
+  font-weight:400;
+}
+
+.wrap { 
+  width:1080px; 
+  margin:auto;
+}
+
+section {
+  margin-top:150px;
+}
+
+.table__common { 
+  margin:20px 0;
+  border-top:1px solid #e8e8e8;
+}
+.table--row {
+  width:100%; 
+  position:relative;
+  font-family: 'Raleway';
+  font-weight:400;
+  border-bottom:1px solid #e8e8e8; 
+  line-height:1.7em;
+}
+
+.table--header {
+  position:absolute;
+  top:0;
+  left:0;
+  padding:17px 8px;
+  color:#b9b9b9;
+}
+
+.table--content {
+  margin-left:120px;
+  padding:17px 8px;
+}
+
+/* CONTENT */
+header { 
+  padding:80px 0; 
+  text-align:center;
+}
+
+.header--title { 
+  font-size:30px;
+  color:#333;
+}
+
+.header--title__sub {
+  font-size:22px;
+  color:#f47492;
+  font-style:italic;
+}
+
+.aside--icon {
+  position:fixed;
+  top:20px;
+  right:20px;
+  z-index:10;
+  width:28px;
+}
+
+.aside--icon__github {
+  display:block;
+  height:28px;
+  background:url('../images/icon_github.png') no-repeat center center #fff;
+  background-size:contain;
+  font-size:0;
+  text-indent:-999px;
+  border-radius:20px;
+}
+
+.aside--icon__github:hover {
+  background:url('../images/icon_github_on.png') no-repeat center center #fff;
+  background-size:contain;
+}
+
+.aside--icon__resume {
+  display:block;
+  height:23px;
+  margin-top:15px;
+  background:url('../images/icon_download.png') no-repeat center center #fff;
+  background-size:contain;
+  font-size:0;
+  text-indent:-999px;
+}
+
+.aside--icon__resume:hover {
+  background:url('../images/icon_download_on.png') no-repeat center center #fff;
+  background-size:contain;
+}
+
+.info--personal {
+  margin:0 130px;
+}
+
+.info--description {
+  margin-bottom:40px;
+  line-height:1.7em;
+  text-align:center;
+  color:#888;
+}
+.info--tech {
+  text-align:center;
+}
+
+.info--tech--elem {
+  display:inline-block;
+  margin:10px 12px 10px 0;
+  padding:8px 11px;
+  border:1px solid #629fc5;
+  border-radius:20px;
+}
+
+.info--tech--elem:nth-child(2n) {
+  border:1px solid #f47492;
+}
+
+.info--tech--elem:first-child {
+  margin-left:0;
+}
+
+.section--division {
+  margin-bottom:60px;
+}
+
+.section--title { 
+  margin-bottom:80px;
+  text-align:center;
+  font-size:27px;
+  color:#555;
+}
+
+.section--title--sub {
+  font-size:20px;
+  color:#555;
+}
+
+.section--title--additional {
+  font-size:18px;
+  color:#777;
+}
+
+.section--link {
+  padding-right:25px;
+  background:url('../images/icon_link.png') no-repeat center right;
+  background-size:contain;
+}
+
+.section--link:hover {
+  background:url('../images/icon_link_on.png') no-repeat center right;
+  background-size:contain;
+  text-decoration:underline;
+}
+
+.list--title {
+  margin:25px 0 3px;
+}
+
+.list--title:first-child {
+  margin-top:0;
+}
+
+.list--content__dot {
+  position:relative;
+  padding-left:18px;
+  text-indent:-18px;
+}
+
+.list--content__dot:before { 
+  content:"";
+  display:inline-block;
+  width:8px;
+  height:8px;
+  margin-right:10px;
+  border:1px solid #b9b9b9;
+  border-radius:10px;
+}
+
+.list--content__nonedot:before {
+  border:0;
+  border-radius:0;
+}
+
+footer {
+  padding:80px 0 60px;
+  text-align:center;
+}
+
+.footer--greeting {
+  margin-bottom:20px;
+  font-size:22px;
+  color:#f47492;
+  font-style:italic;
+}
+
+address {
+  font-size:15px;
+  color:#888;
+}
+
+@media all and (max-width:1200px) {
+  .wrap { 
+    width:980px; 
+  }
+}
+
+@media all and (max-width:1080px) {
+  .wrap { 
+    width:800px; 
+  }
+
+  .info--personal {
+    margin:0 100px;
+  }
+}
+
+@media all and (max-width:980px) {
+  .wrap { 
+    width:90%; 
+  }
+
+  .info--personal {
+    margin:0 10%;
+  }
+}
+
+
+@media all and (max-width:800px) {
+  body {
+    font-size:15px;
+  }
+  .wrap { 
+    width:auto;
+    margin:0 10px;
+  }
+
+  .info--personal {
+    margin:0 10%;
+  }
+}
+
+
+@media all and (max-width:640px) {
+  section {
+    margin-top:110px;
+  }
+
+  .section--title {
+    margin-bottom:60px;
+  }
+
+  .table--content {
+    margin-left:100px;
+  }
+
+  .info--tech--elem {
+    margin:8px 8px 8px 0;
+    padding:8px 8px;
+  }
+
+  .section--link {
+    word-break:break-all;
+  }
+}
