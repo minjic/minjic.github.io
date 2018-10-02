@@ -2,12 +2,12 @@
 
 /* COMMON */
 .title__font {
-  font-family: 'Raleway'; 
+  font-family: 'Raleway';
   font-weight:400;
 }
 
-.wrap { 
-  width:1080px; 
+.wrap {
+  width:1080px;
   margin:auto;
 }
 
@@ -15,16 +15,16 @@ section {
   margin-top:150px;
 }
 
-.table__common { 
+.table__common {
   margin:20px 0;
   border-top:1px solid #e8e8e8;
 }
 .table--row {
-  width:100%; 
+  width:100%;
   position:relative;
   font-family: 'Raleway';
   font-weight:400;
-  border-bottom:1px solid #e8e8e8; 
+  border-bottom:1px solid #e8e8e8;
   line-height:1.7em;
 }
 
@@ -42,12 +42,12 @@ section {
 }
 
 /* CONTENT */
-header { 
-  padding:80px 0; 
+header {
+  padding:80px 0;
   text-align:center;
 }
 
-.header--title { 
+.header--title {
   font-size:30px;
   color:#333;
 }
@@ -84,7 +84,7 @@ header {
 .aside--icon__resume {
   display:block;
   height:23px;
-  margin-top:15px;
+  margin-top:23px;
   background:url('../images/icon_download.png') no-repeat center center #fff;
   background-size:contain;
   font-size:0;
@@ -130,7 +130,7 @@ header {
   margin-bottom:60px;
 }
 
-.section--title { 
+.section--title {
   margin-bottom:80px;
   text-align:center;
   font-size:27px;
@@ -173,7 +173,7 @@ header {
   text-indent:-18px;
 }
 
-.list--content__dot:before { 
+.list--content__dot:before {
   content:"";
   display:inline-block;
   width:8px;
@@ -206,14 +206,14 @@ address {
 }
 
 @media all and (max-width:1200px) {
-  .wrap { 
-    width:980px; 
+  .wrap {
+    width:980px;
   }
 }
 
 @media all and (max-width:1080px) {
-  .wrap { 
-    width:800px; 
+  .wrap {
+    width:800px;
   }
 
   .info--personal {
@@ -222,8 +222,8 @@ address {
 }
 
 @media all and (max-width:980px) {
-  .wrap { 
-    width:90%; 
+  .wrap {
+    width:90%;
   }
 
   .info--personal {
@@ -236,7 +236,7 @@ address {
   body {
     font-size:15px;
   }
-  .wrap { 
+  .wrap {
     width:auto;
     margin:0 10px;
   }
