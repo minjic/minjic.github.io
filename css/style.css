@@ -2,7 +2,7 @@
 
 /* COMMON */
 .title__font {
-  font-family: 'Raleway';
+  font-family: 'Raleway', 'Noto Sans KR';
   font-weight:400;
 }
 
@@ -22,7 +22,7 @@ section {
 .table--row {
   width:100%;
   position:relative;
-  font-family: 'Raleway';
+  font-family: 'Raleway', 'Noto Sans KR';
   font-weight:400;
   border-bottom:1px solid #e8e8e8;
   line-height:1.7em;
