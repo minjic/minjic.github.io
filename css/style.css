@@ -4,6 +4,7 @@
 .title__font {
   font-family: 'Raleway', 'Noto Sans KR';
   font-weight:400;
+  text-align:center;
 }
 
 .wrap {
@@ -132,7 +133,6 @@ header {
 
 .section--title {
   margin-bottom:80px;
-  text-align:center;
   font-size:27px;
   color:#555;
 }
@@ -155,6 +155,18 @@ header {
 
 .section--link:hover {
   background:url('../images/icon_link_on.png') no-repeat center right;
+  background-size:contain;
+  text-decoration:underline;
+}
+
+.section--list {
+  padding-right:25px;
+  background:url('../images/icon_list.png') no-repeat center right;
+  background-size:contain;
+}
+
+.section--list:hover {
+  background:url('../images/icon_list_on.png') no-repeat center right;
   background-size:contain;
   text-decoration:underline;
 }
@@ -188,6 +200,7 @@ header {
   border-radius:0;
 }
 
+/* Footer */
 footer {
   padding:80px 0 60px;
   text-align:center;
@@ -269,3 +282,4 @@ address {
     word-break:break-all;
   }
 }
+

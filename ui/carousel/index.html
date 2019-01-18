@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../css/ui.css">
+  <link rel="stylesheet" href="./css/carousel.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+  <div class="wrap ui">
+    <header>
+      <h1 class="header--title title__font">Slide</h1>
+      <p class="ui--link">
+        <a href="../index.html" class="section--list">Back to List</a>
+        <a href="javascript:alert('준비중')" class="section--link">View this Code</a>
+      </p>
+      <nav class="ui--version">
+        <div class="ui--version--elem active"><span>version01</span></div>
+        <div class="ui--version--elem"><span>version01</span></div>
+        <div class="ui--version--elem"><span>version01</span></div>
+      </nav>
+    </header>
+
+    <section class="slide--box">
+      <div class="slide--wrap">
+        <ul>
+          <li class="slide--elem">1</li>
+          <li class="slide--elem">2</li>
+          <li class="slide--elem">3</li>
+        </ul>
+      </div>
+      <div class="slide--arr next">next</div>
+      <div class="slide--arr prev">prev</div>
+      <ul class="slide--indicator">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </section>
+  </div>
+  <p class="notice"></p>
+  <script src="./js/use_jquery.js"></script>
+</body>
+</html>

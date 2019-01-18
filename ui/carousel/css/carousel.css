@@ -1,0 +1,24 @@
+
+  .slide--box { position:relative; width:100%; height:450px; background-color:plum; }
+  .slide--wrap { position:relative; width:100%; height:100%; overflow:hidden; }
+  .slide--elem { position:absolute; top:0; left:100%; width:100%; height:100%; font-size:100px; color:#fff; text-align:center;}
+
+  .slide--elem.current { left:0; z-index:10; transition:all 1s ease; }
+  .slide--elem.prev { left:-100%; }
+  .slide--elem.next { left:100%; }
+
+  .slide--elem.move { transition:all 1s ease; }
+
+  .slide--elem:nth-child(1) { background-color:#45708a; }
+  .slide--elem:nth-child(2) { background-color:#588fb2; }
+  .slide--elem:nth-child(3) { background-color:#c3c3c3; }
+
+  .slide--arr { position:absolute; top:50%; width:40px; height:40px; margin-top:-20px; font-weight:700; opacity:0.6; cursor:pointer; }
+  .slide--arr:hover { opacity:1; }
+  .slide--arr.next { right:-40px; }
+  .slide--arr.prev { left:-40px; }
+
+  .slide--indicator { position:absolute; left:0; bottom:-20px; width:100%; height:20px; text-align:center; }
+  .slide--indicator li { display:inline-block; width:20px; height:100%; margin:0 3px; background-color:#888; border-radius:10px; font-size:0; text-indent:-100px; cursor:pointer; }
+  .slide--indicator li.active { background-color:#f47492; }
+  .slide--indicator li:hover { background-color:#c06379; }

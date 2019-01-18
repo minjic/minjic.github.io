@@ -1,0 +1,68 @@
+
+.ui section { 
+  margin-top:0; 
+}
+
+.header--nav { 
+  margin-top:40px;
+  text-align:center;
+}
+.header--nav--elem { 
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin:0 5px;
+}
+.header--nav--elem a {
+  display:block;
+  position:relative;
+  height:100%;
+  border-radius:50%;
+  background-color:#629fc5;
+}
+
+.header--nav--elem:nth-child(even) a {
+  background-color:#f47492;
+}
+
+.header--nav--txt {
+  color:transparent
+}
+
+
+/* UI Development */
+.ui--link { 
+  margin-top:50px;
+}
+
+.ui--link a { 
+  margin-right:17px;
+}
+
+.ui--version {
+  display:table;
+  table-layout:fixed;
+  width:100%;
+  margin-top:40px;
+}
+
+.ui--version--elem {
+  display:table-cell;
+}
+
+.ui--version--elem.active  span{
+  border:1px solid #f47492;
+}
+
+.ui--version--elem span {
+  display:block;
+  padding:13px 0;
+  margin:0 5px;
+  border-radius:40px;
+  border:1px solid #b9b9b9;
+  cursor:pointer;
+}
+
+.ui--version--elem span:hover {
+  background-color:#f9f9f9;
+}
