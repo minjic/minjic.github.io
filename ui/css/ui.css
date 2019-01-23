@@ -66,3 +66,37 @@
 .ui--version--elem span:hover {
   background-color:#f9f9f9;
 }
+
+
+.ui--dev { 
+  margin:0 130px;
+  min-height:400px;
+}
+
+.ui--description {
+  margin:25px;
+  text-align:center;
+}
+
+.ui--list {
+  text-align:center;
+}
+
+.ui--list--elem {
+  display:inline-block;
+  margin:10px 12px 10px 0;
+  border:1px solid #629fc5;
+  border-radius:20px;
+}
+
+.ui--list--elem a { 
+  display:block; 
+  padding:8px 11px;
+}
+.ui--list--elem:nth-child(2n) {
+  border:1px solid #f47492;
+}
+
+.ui--list--elem:first-child {
+  margin-left:0;
+}

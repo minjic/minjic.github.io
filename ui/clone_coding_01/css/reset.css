@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; }
+article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,summary {display:block}
+
+body { font-size:13px; color:#666; font-family:"Nanum Gothic","arial","Helvetica","Helvetica Neue","sans-serif","AppleGothic","applegothic"; font-weight:400; line-height:1; background-color:#e4e3df; }
+
+ul,ol,dl,dt,dd,li { list-style:none; }
+h1,h2,h3,h4,h5,h6 { font-weight:400; color:#666; }
+
+a { text-decoration:none; color:#666; font-family:"Nanum Gothic","arial","Helvetica","Helvetica Neue","sans-serif","AppleGothic","applegothic"; font-weight:400; outline:none; }
+a:hover,
+a:visited,
+a:active,
+a:link { text-decoration:none; color:#666; border:0; }
+
+label { vertical-align:middle; }
+address,em { font-style:normal; }
+strong,b { font-weight:bold; }
+
+fieldset, img { border:0; }
+img { vertical-align:top; }
+table { width:100%; border-collapse:collapse; border-spacing:0 }
+
+input, textarea, select { margin:0; padding:0; border:0; outline:0; color:#666; vertical-align:middle; font-family:"Nanum Gothic", "Arial", "arial", "Helvetica", "Helvetica Neue", sans-serif,"AppleGothic","applegothic"; border-radius:0; }
+select { outline:none; }
+button { margin:0; padding:0; border:none; background:none; cursor:pointer; background-color:transparent; font-family:"Nanum Gothic",Helvetica,sans-serif; outline:0; }
+
+textarea{ width:100%; direction:ltr; letter-spacing:0; word-spacing:2px; border:1px solid #d9d9d9; font-family:"Nanum Gothic","arial","Helvetica","Helvetica Neue","sans-serif","AppleGothic","applegothic"; resize:none; -webkit-appearance:none; line-height:1.4em; }
+input { font-size:12px; }
+::-webkit-input-placeholder { color:#bdbdbd; }
+:-ms-input-placeholder { color:#bdbdbd; }
+::-moz-placeholder { color:#bdbdbd; opacity: 1; }
+:-moz-placeholder { color:#bdbdbd; opacity: 1; }
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select { border:0; }
+input[type="radio"] { display:inline-block; width:17px; height:17px; margin-right:8px; vertical-align:middle; -moz-appearance:none; -webkit-appearance: none; appearance:none; border-radius:0; border:0; }
+input[type="radio"]:checked { display:inline-block; width:17px; height:17px; vertical-align:middle; -moz-appearance:none; -webkit-appearance: none; appearance:none; border-radius:0; border:0; }
+
+.blind { position:absolute; left:-9999em; visibility:hidden; width:0; height:0; line-height:0; font-size:0; overflow:hidden; }

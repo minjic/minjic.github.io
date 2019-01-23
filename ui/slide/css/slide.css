@@ -1,12 +1,11 @@
-
   .slide--box { position:relative; width:100%; height:450px; background-color:plum; }
-  .slide--wrap { position:relative; width:100%; height:100%; overflow:hidden; }
-  .slide--elem { position:absolute; top:0; left:100%; width:100%; height:100%; font-size:100px; color:#fff; text-align:center;}
 
+  .slide--wrap { position:relative; width:100%; height:100%; overflow:hidden; }
+
+  .slide--elem { position:absolute; top:0; left:100%; width:100%; height:100%; font-size:100px; color:#fff; text-align:center;}
   .slide--elem.current { left:0; z-index:10; transition:all 1s ease; }
   .slide--elem.prev { left:-100%; }
   .slide--elem.next { left:100%; }
-
   .slide--elem.move { transition:all 1s ease; }
 
   .slide--elem:nth-child(1) { background-color:#45708a; }

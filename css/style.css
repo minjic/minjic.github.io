@@ -7,6 +7,10 @@
   text-align:center;
 }
 
+.align_center {
+  text-align:center; 
+}
+
 .wrap {
   width:1080px;
   margin:auto;

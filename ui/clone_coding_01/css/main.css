@@ -1,0 +1,118 @@
+@import "./reset.css";
+
+/* common */
+.wrap { width:1000px; margin:auto; }
+
+.bb0 { border-bottom:0 !important; }
+.bl0 { border-left:0 !important; }
+.orange { background-color:#EA6E21; }
+.white { background-color:#fff; }
+.gray01 { background-color:#D9D5D0; }
+.gray02 { background-color:#C9C3BC; }
+.gray03 { background-color:#C1BAB2; }
+.gray04 { background-color:#b1aea9; }
+.gray05 { background-color:#848484; }
+
+/* header */
+header { position:relative; margin-top:70px; }
+header .logo { width:199px; height:30px; }
+header .logo a { display:block; height:100%; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/h1_logo.png") no-repeat center center; text-indent:-999px; font-size:0; }
+header nav { position:absolute; top:12px; right:0; width:750px; }
+header nav ul:after { content:""; display:block; clear:both; }
+header nav ul li { float:left; width:20%; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/bg_depth1.png") no-repeat center left; }
+header nav ul li:first-child { background:none; }
+header nav ul li a { display:block; text-align:center; font-size:14px; font-weight:700; }
+header nav ul li:hover a { color:#222; }
+
+/* main */
+.main_box { margin-top:10px; }
+.main_box .row:after { content:""; display:block; clear:both; }
+.main_box .row .elem { position:relative; float:left; width:20%; height:170px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; border-left:1px solid #e4e3df; border-bottom:1px solid #e4e3df; }
+.main_box .row .elem.w40 { width:40%; }
+.main_box .row .elem.w50 { width:50%; }
+.main_box .row .elem:first-child { border-left:0; }
+.main_box .row:last-child .elem { border-bottom:0; }
+
+.main_box .row .elem.bg01 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_img_1.jpg") no-repeat; }
+.main_box .row .elem.bg02 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_img_2.jpg") no-repeat; }
+.main_box .row .elem.bg03 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_img_3.jpg") no-repeat; }
+.main_box .row .elem.bg04 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_img_7.png") no-repeat; }
+.main_box .row .elem.bg05 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_img_5.jpg") no-repeat 0 -171px; }
+.main_box .row .elem.bg06 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_img_6.jpg") no-repeat; }
+
+.main_box .row .elem .elemText { padding:13px; color:#292929; cursor:pointer; line-height:1.2em; font-weight:700; letter-spacing:-0.8px; }
+.main_box .row .elem .elemText.f_w { color:#fff; }
+.main_box .row .elem .elemText.f_b { color:#4f4023; }
+.main_box .row .elem .elemText.f_w dd { color:#e4e3df; }
+.main_box .row .elem .elemText.p_b { position:absolute; left:0; bottom:0; }
+.main_box .row .elem .elemText dt { margin-bottom:3px; font-size:15px; }
+.main_box .row .elem .elemText dd { font-size:12px; }
+
+.main_box .pop .elem { border:0; }
+.main_box .pop .popText { margin:19px 0 0 20px; color:#fff; line-height:1.3em; }
+.main_box .pop .popText dt { margin-bottom:4px; font-size:14px; font-weight:700; }
+.main_box .pop .popText dd { font-size:13px; }
+
+.main_box .pop .closePop { position:absolute; top:20px; right:20px; width:13px; height:13px; cursor:pointer; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/btn_close_pop_white.png") no-repeat center center; }
+
+.main_box .pop .popList dt { margin-bottom:3px; }
+.main_box .pop .popList dt a { display:block; padding:5px; background-color:#c4b9aa; color:#523d30; font-size:11px; text-align:center; font-weight:700; }
+.main_box .pop .popList dd a { color:#c4b9aa; font-size:10px; font-weight:700; line-height:1.3em; }
+
+.main_box .pop01 { display:none; position:absolute; top:0; left:0; z-index:100; width:1000px; }
+.main_box .pop_bg01 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_pop_1.jpg") no-repeat; }
+
+.main_box .pop02 { display:none; position:absolute; top:0; left:0; z-index:100; width:600px; }
+.main_box .pop_bg02 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_pop_2.png") no-repeat; }
+.main_box .pop02 .bg_p6 .popList { margin-left:75px; }
+.main_box .pop02 .bg_p12 .popList { margin-left:10px; }
+.main_box .pop02 .popText { margin:35px 41px; }
+.main_box .pop02 .popText dd { font-family:"arial"}
+.main_box .pop02 .popText dt em { color:#ceaa75; }
+.main_box .pop02 .popList { width:210px; min-height:85px; }
+
+.main_box .pop03 { display:none; position:absolute; bottom:0; left:0; z-index:100; width:400px; }
+.main_box .pop_bg03 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_pop_4.jpg") no-repeat; }
+.main_box .pop03 .popText { margin:31px 0 10px 21px; }
+.main_box .pop03 .popList { width:175px; margin-left:21px; min-height:57px; }
+.main_box .pop03 .popList dt a { background-color:#f7c5a6; color:#000; }
+.main_box .pop03 .popList dd a { color:#000; }
+
+.main_box .pop04 { display:none; position:absolute; left:0; bottom:0; z-index:100; width:400px; }
+.main_box .pop_bg04 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/main_pop_3.jpg") no-repeat; }
+.main_box .pop04 .popText { margin:28px 0 0 23px; }
+.main_box .pop04 .popList { margin-left:23px; min-height:22px; }
+.main_box .pop04 .popList:first-child { margin-top:92px; }
+.main_box .pop04 .popList dt a { background-color:#2b2b2b; color:#c0c0c0; }
+
+.main_box .row .bg_p1 { background-position:0 0 !important; }
+.main_box .row .bg_p2 { background-position:-200px 0 !important; }
+.main_box .row .bg_p3 { background-position:-400px 0 !important; }
+.main_box .row .bg_p4 { background-position:-600px 0 !important; }
+.main_box .row .bg_p5 { background-position:-800px 0 !important; }
+.main_box .row .bg_p6 { background-position:0 -170px !important; }
+.main_box .row .bg_p7 { background-position:-200px -170px !important; }
+.main_box .row .bg_p8 { background-position:-400px -170px !important; }
+.main_box .row .bg_p9 { background-position:-600px -170px !important; }
+.main_box .row .bg_p10 { background-position:-800px -170px !important; }
+
+.main_box .row .bg_p11 { background-position:-300px 0 !important; }
+.main_box .row .bg_p12 { background-position:-300px -170px !important; }
+
+/* footer */
+footer { position:relative; margin-top:22px; }
+footer .footerMenu:after { content:""; display:block; clear:both; }
+footer .footerMenu li { float:left; }
+footer .footerMenu li:last-child:after { content:none; }
+footer .footerMenu li:after { content:""; display:inline-block; width:1px; height:6px; margin:2px 9px 0; background-color:#b8b7b6; }
+footer .footerMenu li a { color:#4a4a4a; font-size:10px; }
+footer .copyright { margin-top:5px; font-size:8px; color:#4a4a4a; letter-spacing:-0.3px; }
+
+footer .familysite { position:absolute; top:0; right:0; }
+footer .familysite .label { cursor:pointer; }
+footer .familysite .siteList { display:none; position:absolute; bottom:18px; left:0; width:128px; padding:0 8px 4px; font-size:11px; border:1px solid #ddd; background-color:#fff; border-radius:7px 7px 0 0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+footer .familysite .siteList a { font-size:11px; }
+footer .familysite .siteList dt { padding:8px 0; }
+footer .familysite .siteList dt.title { padding:12px 0 10px; border-bottom:1px solid #ddd; }
+footer .familysite .siteList dd { line-height:17px; }
+footer .familysite .siteList dd:hover a { text-decoration:underline; }
