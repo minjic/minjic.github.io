@@ -1,5 +1,7 @@
 # Slide
-: 슬라이드 만들기
+: 슬라이드 만들기  
+
+[링크](https://minjic.github.io/ui/slide/index.html)
 
 ### 작업환경
 - **version 01** : jQuery 활용  
