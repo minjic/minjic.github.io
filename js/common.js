@@ -1,3 +1,8 @@
-$(".portfolio--popup .portfolio--close").on("click", function() {
-  $(this).parent(".portfolio--popup").fadeOut(300);
-})
+var uiNoticePopup = (function() {
+  document.addEventListener("DOMContentLoaded", function(){
+    var closeBtn = document.querySelector(".portfolio--close");
+    closeBtn.addEventListener("click", function() {
+      this.parentNode.style.display = "none";
+    })
+  })
+})();
