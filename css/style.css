@@ -287,3 +287,73 @@ address {
   }
 }
 
+
+.portfolio--popup {
+  position:fixed;
+  top:40px;
+  left:40px;
+  width:400px;
+  padding:20px 20px 60px;
+  background-color:rgba(255,255,255,0.8);
+  font-family:'맑은고딕','Malgun Gothic','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',Sans-serif;
+}
+
+.portfolio--title {
+  padding:4px 0 10px;
+  margin-bottom:12px;
+  border-bottom:1px solid #eee; 
+  font-size:20px; 
+  font-weight:700;
+}
+
+.portfolio--explanation {
+  font-size:16px; 
+  letter-spacing:-0.8px;
+  line-height:1.5em;
+}
+
+.portfolio--explanation li { 
+  padding-left:15px;
+}
+.portfolio--explanation li:before {
+  content:"";
+  display:inline-block;
+  width:7px;
+  height:7px;
+  margin-right:8px;
+  margin-left:-15px;
+  border:1px solid #b9b9b9;
+  border-radius:10px;
+}
+
+.portfolio--back {
+  position:absolute;
+  bottom:12px;
+  right:15px;
+  height:20px;
+  line-height:20px;
+  padding-left:25px;
+  font-size:14px;
+  font-family:"airal";
+  color:#b9b9b9;
+  background:url("https://minjic.github.io/images/icon_back.png") no-repeat 0 0;
+  background-size:contain;
+}
+
+.portfolio--back:hover {
+  background:url("https://minjic.github.io/images/icon_back_on.png") no-repeat 0 0;
+  background-size:contain;
+}
+
+.portfolio--close {
+  position:absolute;
+  top:10px;
+  right:15px;
+  width:25px;
+  height:25px;
+  text-indent:-999px;
+  font-size:0;
+  cursor:pointer;
+  background:url("https://minjic.github.io/images/icon_close.png") no-repeat 0 0;
+  background-size:contain;
+}
