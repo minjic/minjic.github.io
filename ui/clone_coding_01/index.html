@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Clone Coding</title>
+  <title>Clone Coding | MAIN</title>
   <link rel="stylesheet" href="https://minjic.github.io/css/style.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -13,7 +13,7 @@
   <script src="../../js/common.js"></script>
 </head>
 <body>
-  <div class="wrap">
+  <div id="main" class="wrap">
     <header>
       <h1 class="logo">
         <a href="https://www.hanwhahistoricalmuseum.co.kr">한화기념관</a>
@@ -45,7 +45,7 @@
           </dl>
 
           <div class="pop pop01">
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem pop_bg01 bg_p1">
                 <a href="#">
                   <dl class="popText">
@@ -59,7 +59,7 @@
               <li class="elem pop_bg01 bg_p4"></li>
               <li class="elem pop_bg01 bg_p5"></li>
             </ol>
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem pop_bg01 bg_p6"></li>
               <li class="elem pop_bg01 bg_p7"></li>
               <li class="elem pop_bg01 bg_p8"></li>
@@ -86,7 +86,7 @@
             <dt>재미있는 화약이야기 ></dt>
           </dl>
           <div class="pop pop02">
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem w50 pop_bg02 bg_p1">
                   <dl class="popText">
                     <dt>재미있는 화약이야기</dt>
@@ -95,7 +95,7 @@
               </li>
               <li class="elem w50 pop_bg02 bg_p11"></li>
             </ol>
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem w50 pop_bg02 bg_p6">
                 <dl class="popList">
                   <dt><a href="#">'화약'이란?</a></dt>
@@ -153,7 +153,7 @@
           </dl>
           
           <div class="pop pop03">
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem w50 pop_bg03 bg_p1">
                 <dl class="popText">
                   <dt>Story of Hanwha</dt>
@@ -168,7 +168,7 @@
               </li>
               <li class="elem w50 pop_bg03 bg_p2"></li>
             </ol>
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem w50 pop_bg03 bg_p6">
                 <dl class="popList">
                   <dt><a href="#"><strong>한화</strong>의 오늘</a></dt>
@@ -192,7 +192,7 @@
           </dl>
           
           <div class="pop pop04">
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem w50 pop_bg04 bg_p1">
                 <dl class="popText f_w">
                   <dt>玄岩 김종희</dt>
@@ -200,7 +200,7 @@
               </li>
               <li class="elem w50 pop_bg04 bg_p2"></li>
             </ol>
-            <ol class="row">
+            <ol class="row flip">
               <li class="elem w50 pop_bg04 bg_p6">
                 <dl class="popList">
                   <dt><a href="#">현암 김종희</a></dt>
@@ -284,15 +284,7 @@
     <div class="portfolio--back"><a href="../index.html">Back to List</a></div>
     <div class="portfolio--close">close</div>
   </aside>
-
-<script>
-  $("footer .familysite .label ").on("click", function() {
-    $(this).next(".siteList").toggle();
-  })
-
-  $(".familysite").on("mouseleave", function() {
-    $("footer .familysite .label ").trigger("click");
-  })
-</script>
+  
+<script src="./js/common.js"></script>
 </body>
 </html>
