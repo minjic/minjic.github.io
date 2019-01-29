@@ -48,6 +48,16 @@ $(document).ready(function() {
   })
 })
 
+var headerEvent = (function() {
+  $("header nav .dep01 li").on("mouseenter", function() {
+    $("header nav .dep02_wrap").slideDown(250);
+  });
+
+  $("header nav").on("mouseleave", function() {
+    $("header nav .dep02_wrap").slideUp(250);
+  })
+})();
+
 var footerEvent = (function() {
   $("footer .familysite .label ").on("click", function() {
     $(this).next(".siteList").toggle();
