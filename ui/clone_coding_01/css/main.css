@@ -18,13 +18,32 @@
 header { position:relative; margin-top:70px; margin-bottom:10px; }
 header .logo { width:199px; height:30px; }
 header .logo a { display:block; height:100%; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/h1_logo.png") no-repeat center center; text-indent:-999px; font-size:0; }
-header nav { position:absolute; top:12px; right:0; width:750px; }
-header nav ul:after { content:""; display:block; clear:both; }
-header nav ul li { float:left; width:20%; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/bg_depth1.png") no-repeat center left; }
-header nav ul li:first-child { background:none; }
-header nav ul li a { display:block; text-align:center; font-size:14px; font-weight:700; }
-header nav ul li:hover a { color:#222; }
+header nav { position:absolute; top:12px; right:0; width:80%; padding-bottom:14px; }
+header nav .dep01 { margin-left:50px; }
+header nav .dep01:after { content:""; display:block; clear:both; }
+header nav .dep01 li { float:left; width:20%; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/bg_depth1.png") no-repeat center left; }
+header nav .dep01 li:first-child { background:none; }
+header nav .dep01 li a { display:block; text-align:center; font-size:14px; font-weight:700; }
+header nav .dep01 li:hover a { color:#222; }
 
+header nav .dep02_wrap { display:none; position:absolute; top:28px; right:0; z-index:10; width:100%; height:169px;  }
+header nav .dep02 { position:absolute; top:0; right:0; width:100%; height:100%; padding-left:50px; padding-top:10px; border-left:1px solid #e4e3df; box-sizing:border-box; background-color:#f07022; }
+#main header nav .dep02_wrap { width:1000px; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/bg_nav.png") no-repeat bottom left; }
+#main header nav .dep02 { width:80%; border-left:0; }
+header nav .dep02:after { content:""; display:block; clear:both; }
+header nav .dep02 > li { float:left; width:20%; text-align:left; }
+header nav .dep02 ol li { margin-bottom:5px; }
+header nav .dep02 .dep02_1 { margin-left:31px; }
+header nav .dep02 .dep02_2 { margin-left:26px; }
+header nav .dep02 .dep02_3 { margin-left:26px; }
+header nav .dep02 .dep02_4 { margin-left:22px; }
+header nav .dep02 .dep02_5 { margin-left:13px; }
+header nav .dep02 a { display:block; position:relative; padding-left:9px; line-height:1.4em; color:#f7c5a6; font-weight:700; }
+header nav .dep02 a:hover { color:#000; }
+header nav .dep02 a:hover:before { content:''; width:4px; height:4px; position:absolute; left:0; top:6px; border-left:1px solid #000; border-top:1px solid #000; transform:rotate(135deg); }
+
+
+/* contents */
 .row:after { content:""; display:block; clear:both; }
 .row .elem { position:relative; float:left; width:20%; height:170px; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; border-left:1px solid #e4e3df; border-bottom:1px solid #e4e3df; }
 .row .elem.w40 { width:40%; }
@@ -68,7 +87,7 @@ header nav ul li:hover a { color:#222; }
 .main_box .pop .popText dt { margin-bottom:4px; font-size:14px; font-weight:700; }
 .main_box .pop .popText dd { font-size:13px; }
 
-.main_box .pop .closePop { display:none; position:absolute; top:20px; right:20px; width:13px; height:13px; cursor:pointer; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/btn_close_pop_white.png") no-repeat center center; }
+.main_box .pop .closePop { position:absolute; top:20px; right:20px; width:13px; height:13px; cursor:pointer; background:url("https://www.hanwhahistoricalmuseum.co.kr/images/btn_close_pop_white.png") no-repeat center center; }
 
 .main_box .pop .popList dt { margin-bottom:3px; }
 .main_box .pop .popList dt a { display:block; padding:5px; background-color:#c4b9aa; color:#523d30; font-size:11px; text-align:center; font-weight:700; }
@@ -124,7 +143,7 @@ header nav ul li:hover a { color:#222; }
 
 .sub_box .sub01_menu { padding:15px 0 0 15px; }
 .sub_box .sub01_menu dt { margin-bottom:8px; font-size:18px; font-weight:700; color:#fff; }
-.sub_box .sub01_menu dd a { display:inline-block; position:relative; padding-left:8px; line-height:1.5em; font-size:13px; color:#fff; font-weight:700; }
+.sub_box .sub01_menu dd a { display:inline-block; position:relative; padding-left:8px; line-height:1.5em; font-size:13px; color:#f7c5a6; font-weight:700; }
 .sub_box .sub01_menu dd a:hover,
 .sub_box .sub01_menu dd.on a { color:#000; }
 .sub_box .sub01_menu dd a:hover:before,

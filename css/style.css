@@ -292,6 +292,7 @@ address {
   position:fixed;
   top:40px;
   left:40px;
+  z-index:1000;
   width:400px;
   padding:20px 20px 60px;
   background-color:rgba(255,255,255,0.8);
@@ -315,6 +316,7 @@ address {
 .portfolio--explanation li { 
   padding-left:15px;
 }
+
 .portfolio--explanation li:before {
   content:"";
   display:inline-block;
