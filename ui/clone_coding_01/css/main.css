@@ -51,9 +51,10 @@ header nav .dep02 a:hover:before { content:''; width:4px; height:4px; position:a
 .row .elem:first-child { border-left:0; }
 .row:last-child .elem { border-bottom:0; }
 
-.row.flip .elem { display:none; opacity:0; }
-.row.flip .elem.active { opacity:1; -webkit-transform-style:preserve-3d; transform-style:preserve-3d; -webkit-animation:flip-horizon 0.6s ease-out; animation:flip-horizon 0.6s ease-out; }
-.row.flip .elem.remove { opacity:0; }
+.flip .elem { display:none; opacity:0; }
+.flip.row .elem.active { opacity:1; -webkit-transform-style:preserve-3d; transform-style:preserve-3d; -webkit-animation:flip-horizon 0.6s ease-out; animation:flip-horizon 0.6s ease-out; }
+.flip.column .elem.active { opacity:1; -webkit-transform-style:preserve-3d; transform-style:preserve-3d; -webkit-animation:flip-vertical 0.6s ease-out; animation:flip-vertical 0.6s ease-out; }
+.flip .elem.remove { opacity:0; }
 
 @keyframes flip-horizon {
 	0% {transform:rotateY(140deg)}
@@ -135,10 +136,11 @@ header nav .dep02 a:hover:before { content:''; width:4px; height:4px; position:a
 
 /* sub */
 .sub_box { position:relative; }
+.sub_box .row { height:170px; }
 .sub_box .row .elem.bg01 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/bg_lnb4_1.png") no-repeat; }
 .sub_box .row .elem.bg02 { background:url("https://www.hanwhahistoricalmuseum.co.kr/images/bg_lnb4_2.png") no-repeat; }
 
-.sub_box .column { position:absolute; top:170px; left:0; width:20%; height:510px; background:red;}
+.sub_box .layout_left { position:absolute; top:170px; left:0; width:20%; height:510px; }
 .sub_box .column .elem { height:170px; }
 
 .sub_box .sub01_menu { padding:15px 0 0 15px; }
