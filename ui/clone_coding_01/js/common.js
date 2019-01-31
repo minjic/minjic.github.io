@@ -34,18 +34,17 @@ var FlipEvent = function(container, lineCount) {
 };
 
 FlipEvent.prototype.open = function() {
-  // this.close(false);
-  console.log(this.$ELEM)
   this.$ELEM.show();
   this.sequenceEvent(this.FLIP_OPEN_CLASS);
 };
 
-FlipEvent.prototype.close = function(init) {
+FlipEvent.prototype.close = function() {
+  var self = this;
   this.sequenceEvent(this.FLIP_CLOSE_CLASS);
   setTimeout(function() {
-    this.$ELEM.hide();
-    this.$ELEM.removeClass(this.FLIP_OPEN_CLASS).removeClass(this.FLIP_CLOSE_CLASS);
-  }, this.TIME_TOTAL_DELAY);
+    self.$ELEM.hide();
+    self.$ELEM.removeClass(self.FLIP_OPEN_CLASS).removeClass(self.FLIP_CLOSE_CLASS);
+  }, self.TIME_TOTAL_DELAY);
 };
 
 FlipEvent.prototype.sequenceEvent = function(state) {
@@ -84,13 +83,58 @@ FlipEvent.prototype.sequenceEvent = function(state) {
 };
 
 if ($(".wrap").is("#main")) {
-  $("#main .elemText").on("click", function() {
-    var mainFlip = new FlipEvent($(this).next(".pop"), 2);
-    mainFlip.open();
+  // $("#main .elemText").on("click", function() {
+  //   var mainFlip = new FlipEvent($(this).next(".pop"), 2);
+  //   mainFlip.open();
 
-    $("#main .closePop").on("click", function() {
-      mainFlip.close();
-    })
+  //   $("#main .closePop").on("click", function() {
+  //     mainFlip.close();
+  //   })
+  // })
+
+  var mainFlip01 = new FlipEvent($("#main .pop01"), 2);
+  var mainFlip02 = new FlipEvent($("#main .pop02"), 2);
+  var mainFlip03 = new FlipEvent($("#main .pop03"), 2);
+  var mainFlip04 = new FlipEvent($("#main .pop04"), 2);
+
+  $("#main .elemText").on("click", function() {
+    var popIdx = Number($(this).next(".pop").attr("class").replace(/[^0-9]/g, ""));
+    switch (popIdx) {
+      case 1 :
+        mainFlip01.open();
+        break;
+      case 2 :
+        mainFlip02.open();
+        break;
+      case 3 :
+        mainFlip03.open();
+        break;
+      case 4 :
+        mainFlip04.open();
+        break;
+      default :
+        return false;
+    }
+  })
+
+  $("#main .closePop").on("click", function() {
+    var popIdx = Number($(this).parents(".pop").attr("class").replace(/[^0-9]/g, ""));
+    switch (popIdx) {
+      case 1 :
+        mainFlip01.close();
+        break;
+      case 2 :
+        mainFlip02.close();
+        break;
+      case 3 :
+        mainFlip03.close();
+        break;
+      case 4 :
+        mainFlip04.close();
+        break;
+      default :
+        return false;
+    }
   })
 }
 
