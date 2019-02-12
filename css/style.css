@@ -1,7 +1,8 @@
 @import "./reset.css";
 
 /* COMMON */
-.title__font {
+.title__font,
+.title__font a {
   font-family: 'Raleway', 'Noto Sans KR';
   font-weight:400;
   text-align:center;
@@ -52,7 +53,8 @@ header {
   text-align:center;
 }
 
-.header--title {
+.header--title,
+.header--title a {
   font-size:30px;
   color:#333;
 }
