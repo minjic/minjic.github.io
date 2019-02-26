@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>swipe js slide</title>
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 
+사이트 : http://www.true-inno.com
+swipe js 이용하여 동적 슬라이트 제작
+   -->
+</head>
+<body>
+  <!-- <header>
+    header
+  </header> -->
+  <section class="main-visual swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide01">
+        <div class="txt">
+          <span class="sub">True NUGU</span>
+          <p class="main">
+            &quot;아리야,<br/>
+            함께할 파트너를 찾아줘&quot;<br/>
+            NUGU를 함께 변화시킬<br/>
+            파트너를 찾습니다.
+          </p>
+        </div>
+        <div class="img"></div>
+        <div class="object"></div>
+      </div>
+      <div class="swiper-slide slide02">
+        <div class="txt">
+          <span class="sub">True BLOCKCHAIN</span>
+          <p class="main">
+            미래세상을 바꿀<br/>
+            Blockchain,<br/>
+            SK텔레콤과 함께 할 파트너를<br/>
+            찾습니다.
+          </p>
+        </div>
+        <div class="img"></div>
+        <div class="object"></div>
+      </div>
+      <div class="swiper-slide slide03">
+        <div class="txt">
+          <span class="sub">True NEXT MEDIA</span>
+          <p class="main">
+            SK브로드밴드 / SK스토아와<br/>
+            Next Media 분야를 함께<br/>
+            선도할 파트너를 찾습니다.
+          </p>
+        </div>
+        <div class="img"></div>
+        <div class="object"></div>
+      </div>
+      <div class="swiper-slide slide04">
+        <div class="txt">
+          <span class="sub">True SECURITY</span>
+          <p class="main">
+            SK텔레콤과 함께 차세대<br/>
+            보안분야를 혁신할 파트너를<br/>
+            찾습니다.
+          </p>
+        </div>
+        <div class="img"></div>
+        <div class="object"></div>
+      </div>
+      <div class="swiper-slide slide05">
+        <div class="txt">
+          <span class="sub">True BIG DATA</span>
+          <p class="main">
+            Data분석을 통한 새로운 가치<br/>
+            SK텔레콤과 함께 할 파트너를<br/>
+            찾습니다.
+          </p>
+        </div>
+        <div class="img"></div>
+        <div class="object"></div>
+      </div>
+    </div>
+    
+    <!-- 왼쪽 하단 -->
+    <div class="swiper-pagination"></div>
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+  <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
+  </script>
+</body>
+</html>
