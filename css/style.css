@@ -113,6 +113,12 @@ header {
   text-align:center;
   color:#888;
 }
+
+.info--description strong {
+  font-weight:normal;
+  color:#444;
+}
+
 .info--tech {
   text-align:center;
 }
