@@ -7,7 +7,7 @@
   <title>swipe js slide</title>
   <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+  <link rel="stylesheet" href="./css/swiper-4.4.6.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- 
 사이트 : http://www.true-inno.com
@@ -82,20 +82,27 @@ swipe js 이용하여 동적 슬라이트 제작
         <div class="img"></div>
         <div class="object"></div>
       </div>
+
     </div>
     
     <!-- 왼쪽 하단 -->
-    <div class="swiper-pagination"></div>
+    <div class="slide-pagination">
+      <div class="slide-pagination-list"></div>
+      <i class="bullet"></i>
+    </div>
     
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- <div class="swiper-scrollbar"></div> -->
+    <div class="slide-btn">
+      <button class="slide-btn-prev"></button>
+      <span class="object"></span>
+      <button class="slide-btn-next"></button>
+    </div>
   </section>
 
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
   <script>
+    
+
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
@@ -103,20 +110,32 @@ swipe js 이용하여 동적 슬라이트 제작
 
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
+      el: '.slide-pagination-list',
+      clickable : true
     },
-
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+      nextEl: '.slide-btn-next',
+      prevEl: '.slide-btn-prev',
+    }
   })
+
+// pagination setting
+  var $slides = $(".swiper-slide");
+  $slides.each(function(i,x) {
+    if ( i !== 0 && i !== ($slides.length-1) ) {
+      var name = $(this).find(".txt .sub").text();
+      $(".swiper-pagination-bullet").eq(i-1).text(name);
+    }
+  })
+
+// pagination bullet setting
+  mySwiper.on('slideChange', function() {
+    var idx = mySwiper.realIndex;
+    console.log(idx, ((35 * idx) + 6 ))
+    $(".main-visual .slide-pagination i.bullet").css("top", ((35 * idx) + 6 ) +"px");
+  });
+
   </script>
 </body>
 </html>
