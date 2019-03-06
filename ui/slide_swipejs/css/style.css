@@ -13,23 +13,25 @@ header { position:fixed; top:0; left:0; z-index:1000; width:100%; height:80px; l
 .main-visual .slide04 { background-color:#aaa7ad; }
 .main-visual .slide05 { background-color:#39a2a5; }
 
-.main-visual .swiper-slide .txt { position:absolute; top:27%; left:40px; z-index:1000; padding:55px 0 135px; color:#fff; font-size:43px; line-height:1.4em; font-family:'Noto Sans KR'; font-weight:900; }
+.main-visual .swiper-slide .txt { position:absolute; top:27%; left:340px; z-index:1000; padding:55px 0 135px; margin-left:-430px; color:#fff; font-size:43px; line-height:1.4em; font-family:'Noto Sans KR'; font-weight:900; opacity:0.3; transition:margin-left 0.5s, opacity 0.5s, left 1.5s; }
+.main-visual .swiper-slide.swiper-slide-active .txt { left:40px; margin-left:0; opacity:1; }
 .main-visual .swiper-slide .txt .sub { position:absolute; top:0; left:0; font-size:15px; }
 .main-visual .swiper-slide .txt:before { content:""; display:block; position:absolute; bottom:5px; left:217px; width:15px; height:1px; background-color:#fff; transform:rotate(45deg); }
 .main-visual .swiper-slide .txt:after { content:""; display:block; position:absolute; bottom:0; left:150px; width:80px; height:1px; background-color:#fff; }
 
-.main-visual .swiper-slide .img { position:absolute; top:50%; left:50%; z-index:500; width:70vw; height:70vh; margin-top:-35vh; margin-left:-35vw; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); transition:0.5s; }
+.main-visual .swiper-slide .img { position:absolute; top:50%; left:50%; z-index:500; width:70vw; height:70vh; margin-top:-35vh; margin-left:-35vw; box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2); transition:0.7s; transition-delay: 1.5s; }
+.main-visual .swiper-slide .img:before { content:''; position:absolute; top:0; right:257px; width:1px; height:100%; background-color:transparent; transition:1s; transition-delay:1s; }
+.main-visual .swiper-slide.swiper-slide-active .img { position:relative; width:100vw; height:100vh; margin-top:-50vh; margin-left:-50vw; }
+.main-visual .swiper-slide.swiper-slide-active .img:before { background-color:rgba(255,255,255,0.2); }
+
 .main-visual .slide01 .img { background:#5f96be url("http://www.true-inno.com/imgs/main/vis02.jpg") no-repeat center center; background-size:cover; }
 .main-visual .slide02 .img { background:#8484a0 url("http://www.true-inno.com/imgs/main/vis03.jpg") no-repeat center center; background-size:cover; }
 .main-visual .slide03 .img { background:#d89c2b url("http://www.true-inno.com/imgs/main/vis04.jpg") no-repeat center center; background-size:cover; }
 .main-visual .slide04 .img { background:#aaa7ad url("http://www.true-inno.com/imgs/main/vis05.jpg") no-repeat center center; background-size:cover; }
 .main-visual .slide05 .img { background:#39a2a5 url("http://www.true-inno.com/imgs/main/vis06.jpg") no-repeat center center; background-size:cover; }
 
-.main-visual .swiper-slide.on .img { position:relative; width:100vw; height:100vh; margin-top:-50vh; margin-left:-50vw; }
-.main-visual .swiper-slide.on .img:before { content:''; position:absolute; top:0; right:257px; width:1px; height:100%; background-color:rgba(255,255,255,0.2); }
-
-.main-visual .swiper-slide .object { position:absolute; left:50%; top:50%; z-index:700; width:290px; height:337px; margin:-165px 0 0 -145px; background:url('http://www.true-inno.com/imgs/main/bg_figure01.png') no-repeat center top; background-size:100%; opacity:0; transition:0.5s; }
-.main-visual .swiper-slide.on .object { opacity:0.2; }
+.main-visual .swiper-slide .object { position:absolute; left:50%; top:50%; z-index:700; width:290px; height:337px; margin:-165px 0 0 -145px; background-size:100%; opacity:0; transition:1s; transition-delay: 1s;}
+.main-visual .swiper-slide.swiper-slide-active .object { background:url('http://www.true-inno.com/imgs/main/bg_figure01.png') no-repeat center top; opacity:0.2; }
 
 /* slide btn -- arrow */
 .main-visual .slide-btn { position:absolute; bottom:40px; left:50%; z-index:100; margin-left:-160px; width:320px; height:30px; }

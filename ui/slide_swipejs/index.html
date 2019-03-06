@@ -132,7 +132,6 @@ swipe js 이용하여 동적 슬라이트 제작
 // pagination bullet setting
   mySwiper.on('slideChange', function() {
     var idx = mySwiper.realIndex;
-    console.log(idx, ((35 * idx) + 6 ))
     $(".main-visual .slide-pagination i.bullet").css("top", ((35 * idx) + 6 ) +"px");
   });
 
