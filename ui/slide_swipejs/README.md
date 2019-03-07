@@ -1,5 +1,5 @@
 # Slide : Swiper & Clone Coding
-: swipe js 활용하여 슬라이드 만들기 및 클론 코딩  
+: Swiper 플러그인 활용하여 슬라이드 만들기 및 클론 코딩  
 
 [링크](https://minjic.github.io/ui/slide_swipejs/index.html)
 
