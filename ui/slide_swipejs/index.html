@@ -15,149 +15,102 @@ swipe js 이용하여 동적 슬라이트 제작
    -->
 </head>
 <body>
-  <!-- <header>
+  <header>
     header
-  </header> -->
-  <section class="main-visual swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide slide01">
-        <div class="txt">
-          <span class="sub">True NUGU</span>
-          <p class="main">
-            &quot;아리야,<br/>
-            함께할 파트너를 찾아줘&quot;<br/>
-            NUGU를 함께 변화시킬<br/>
-            파트너를 찾습니다.
-          </p>
+  </header>
+  <section class="main-visual">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide01">
+          <div class="txt">
+            <span class="sub">True NUGU</span>
+            <p class="main">
+              &quot;아리야,<br/>
+              함께할 파트너를 찾아줘&quot;<br/>
+              NUGU를 함께 변화시킬<br/>
+              파트너를 찾습니다.
+            </p>
+          </div>
+          <div class="img"></div>
+          <div class="object"></div>
         </div>
-        <div class="img"></div>
-        <div class="object"></div>
-      </div>
-      <div class="swiper-slide slide02">
-        <div class="txt">
-          <span class="sub">True BLOCKCHAIN</span>
-          <p class="main">
-            미래세상을 바꿀<br/>
-            Blockchain,<br/>
-            SK텔레콤과 함께 할 파트너를<br/>
-            찾습니다.
-          </p>
+        <div class="swiper-slide slide02">
+          <div class="txt">
+            <span class="sub">True BLOCKCHAIN</span>
+            <p class="main">
+              미래세상을 바꿀<br/>
+              Blockchain,<br/>
+              SK텔레콤과 함께 할 파트너를<br/>
+              찾습니다.
+            </p>
+          </div>
+          <div class="img"></div>
+          <div class="object"></div>
         </div>
-        <div class="img"></div>
-        <div class="object"></div>
-      </div>
-      <div class="swiper-slide slide03">
-        <div class="txt">
-          <span class="sub">True NEXT MEDIA</span>
-          <p class="main">
-            SK브로드밴드 / SK스토아와<br/>
-            Next Media 분야를 함께<br/>
-            선도할 파트너를 찾습니다.
-          </p>
+        <div class="swiper-slide slide03">
+          <div class="txt">
+            <span class="sub">True NEXT MEDIA</span>
+            <p class="main">
+              SK브로드밴드 / SK스토아와<br/>
+              Next Media 분야를 함께<br/>
+              선도할 파트너를 찾습니다.
+            </p>
+          </div>
+          <div class="img"></div>
+          <div class="object"></div>
         </div>
-        <div class="img"></div>
-        <div class="object"></div>
-      </div>
-      <div class="swiper-slide slide04">
-        <div class="txt">
-          <span class="sub">True SECURITY</span>
-          <p class="main">
-            SK텔레콤과 함께 차세대<br/>
-            보안분야를 혁신할 파트너를<br/>
-            찾습니다.
-          </p>
+        <div class="swiper-slide slide04">
+          <div class="txt">
+            <span class="sub">True SECURITY</span>
+            <p class="main">
+              SK텔레콤과 함께 차세대<br/>
+              보안분야를 혁신할 파트너를<br/>
+              찾습니다.
+            </p>
+          </div>
+          <div class="img"></div>
+          <div class="object"></div>
         </div>
-        <div class="img"></div>
-        <div class="object"></div>
-      </div>
-      <div class="swiper-slide slide05">
-        <div class="txt">
-          <span class="sub">True BIG DATA</span>
-          <p class="main">
-            Data분석을 통한 새로운 가치<br/>
-            SK텔레콤과 함께 할 파트너를<br/>
-            찾습니다.
-          </p>
+        <div class="swiper-slide slide05">
+          <div class="txt">
+            <span class="sub">True BIG DATA</span>
+            <p class="main">
+              Data분석을 통한 새로운 가치<br/>
+              SK텔레콤과 함께 할 파트너를<br/>
+              찾습니다.
+            </p>
+          </div>
+          <div class="img"></div>
+          <div class="object"></div>
         </div>
-        <div class="img"></div>
-        <div class="object"></div>
-      </div>
 
+      </div>
+      
+      <!-- 왼쪽 하단 -->
+      <div class="slide-pagination">
+        <div class="slide-pagination-list"></div>
+        <i class="bullet"></i>
+      </div>
+      
+      <div class="slide-btn">
+        <button class="slide-btn-prev"></button>
+        <span class="object"></span>
+        <button class="slide-btn-next"></button>
+      </div>
     </div>
-    
-    <!-- 왼쪽 하단 -->
-    <div class="slide-pagination">
-      <div class="slide-pagination-list"></div>
-      <i class="bullet"></i>
-    </div>
-    
-    <div class="slide-btn">
-      <button class="slide-btn-prev"></button>
-      <span class="object"></span>
-      <button class="slide-btn-next"></button>
+  </section>
+
+  <section class="main-content">
+    <div class="content-wrap">
+      ▲ ▲ ▲ <br/>
+      Main Contents Scroll Up
     </div>
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
-  <script>
-  
-  var $slides = $(".swiper-slide");
-
-  var onSlide = function() {    
-    $slides.removeClass("on").removeClass("off");
-    $(".swiper-slide-active").addClass("on");
-
-    setTimeout(function() {
-      $(".swiper-slide-active").addClass("off");
-    }, 2500)
-  };
-
-  $('.main-visual').imagesLoaded(function() {
-
-    var mySwiper = new Swiper ('.main-visual', {
-      on : {
-        init: onSlide
-      },
-      direction: 'horizontal',
-      loop: true,
-      speed: 800,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.slide-pagination-list',
-        clickable : true
-      },
-      navigation: {
-        nextEl: '.slide-btn-next',
-        prevEl: '.slide-btn-prev',
-      }
-    })
-
-    // pagination setting
-    $slides.each(function(i) {
-        var name = $(this).find(".txt .sub").text();
-        $(".swiper-pagination-bullet").eq(i).text(name);
-    })
-
-    // pagination bullet setting
-    mySwiper.on('slideChange', function() {
-      var idx = mySwiper.realIndex;
-      $(".main-visual .slide-pagination i.bullet").css("top", ((35 * idx) + 6 ) +"px");
-    });
-    
-    mySwiper.on('slideChangeTransitionStart', function() {
-      onSlide();
-    })
-  }) 
-  
-
-
-  </script>
-
+  <script src="./js/main.js"></script>
 
   <aside class="portfolio--popup">
     <h1 class="portfolio--title">#Clone Coding #02 #Slide #PC</h1>

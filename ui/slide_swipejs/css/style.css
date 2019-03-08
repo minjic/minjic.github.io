@@ -1,10 +1,12 @@
 @import "https://minjic.github.io/css/reset.css";
 
 html,body { font:normal 15px/24px 'Noto Sans Kr', '돋움', dotum, sans-serif; letter-spacing:-0.03em; }
-header { position:fixed; top:0; left:0; z-index:1000; width:100%; height:80px; line-height:80px; font-weight:700; font-size:50px; text-align:center; background-color:rgba(255,255,255,0.6); border-bottom:1px solid #fff; }
+header { position:fixed; top:0; left:0; z-index:1300; width:100%; height:80px; line-height:80px; font-weight:700; font-size:50px; text-align:center; background-color:rgba(255,255,255,0.6); border-bottom:1px solid #fff; transition:all 0.3s ease-in-out; }
+header.on { height:60px; line-height:60px; background-color:#fff; font-size:30px; }
 
-/* main visual */
-.main-visual { width:100%; height:100vh; }
+/** main visual **/
+.main-visual { position:fixed; top:0; left:0; z-index:1001; width:100vw; height:100vh; }
+.main-visual .swiper-container { width:100%; height:100%; }
 
 .main-visual .swiper-slide { position:relative; background:url('http://www.true-inno.com/imgs/main/bg_main.png') no-repeat center top; background-size:cover; }
 .main-visual .slide01 { background-color:#5f96be; }
@@ -24,7 +26,6 @@ header { position:fixed; top:0; left:0; z-index:1000; width:100%; height:80px; l
 .main-visual .swiper-slide.on .img { width:100vw; height:100vh; margin-top:-50vh; margin-left:-50vw; }
 .main-visual .swiper-slide.off .img { width:70vw; height:70vh; margin-top:-35vh; margin-left:-35vw; }
 .main-visual .swiper-slide.on .img:before { background-color:rgba(255,255,255,0.5); }
-/* .main-visual .swiper-slide.off .img:before { background-color:transparent; } */
 
 .main-visual .slide01 .img { background:#5f96be url("http://www.true-inno.com/imgs/main/vis02.jpg") no-repeat center center; background-size:cover; }
 .main-visual .slide02 .img { background:#8484a0 url("http://www.true-inno.com/imgs/main/vis03.jpg") no-repeat center center; background-size:cover; }
@@ -34,7 +35,6 @@ header { position:fixed; top:0; left:0; z-index:1000; width:100%; height:80px; l
 
 .main-visual .swiper-slide .object { position:absolute; left:50%; top:50%; z-index:700; width:290px; height:337px; margin:-165px 0 0 -145px; background-size:100%; opacity:0; transition:1s; transition-delay: 1.8s;}
 .main-visual .swiper-slide.on .object { background:url('http://www.true-inno.com/imgs/main/bg_figure01.png') no-repeat center top; opacity:0.3; }
-/* .main-visual .swiper-slide.off .object { background:none; opacity:0; } */
 
 /* slide btn -- arrow */
 .main-visual .slide-btn { position:absolute; bottom:40px; left:50%; z-index:100; margin-left:-160px; width:320px; height:30px; }
@@ -54,3 +54,8 @@ header { position:fixed; top:0; left:0; z-index:1000; width:100%; height:80px; l
 .main-visual .slide-pagination span { display:inline-block; padding-top:11px; font-size:14px; opacity:0.3; outline:none;}
 .main-visual .slide-pagination span:first-child { padding-top:0; }
 .swiper-pagination-bullet-active { opacity:1 !important; }
+
+
+/** main content **/
+.main-content { position:relative; z-index:1200; min-height:1500px; margin-top:100vh; background-color:#555; }
+.main-content .content-wrap { padding:100px; text-align:center; color:#888; font-size:50px; font-weight:700; line-height:1.5em;}
