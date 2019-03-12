@@ -1,0 +1,68 @@
+@import "https://minjic.github.io/css/reset.css";
+
+
+.wrap { width:1200px; margin:auto; }
+.content-wrap { position:relative; }
+header { padding:25px 0; background-color:#e96a63; opacity:.9; text-align:left; }
+header h1 { font-size:20px; font-weight:700; color:#fff; }
+
+/* aside navi */
+.nav-btn { position:fixed; top:50%; right:20px; z-index:10; margin-top:-40px; }
+.nav-btn ul li { margin-bottom:14px; text-align:right; }
+
+.nav-btn ul li .button { float:right; display:inline-block; width:15px; height:15px; margin-left:11px; background-color:#e96187; border-radius:50%; font-size:0; text-indent:-9999px; }
+.nav-btn ul li:hover .button,
+.nav-btn ul li.on .button { background-color:#cb4333; }
+.nav-btn ul li .title { display:inline-block; font-size:15px; font-weight:700; color:#bbb; }
+.nav-btn ul li:hover .title,
+.nav-btn ul li.on .title { color:#444; }
+
+/* main contents */
+.contents { height:100%; position:relative; z-index:4; }
+.contents article { width:100%; }
+.contents article .conWrap { width:580px; }
+.contents article:after { content:""; display:block; clear:both; }
+.contents article.left .conWrap { float:left; text-align:left; }
+.contents article.center .conWrap { width:750px; margin:auto; text-align:center; }
+.contents article.right .conWrap { float:right; text-align:right; }
+
+.contents article.first { padding:100px 0 240px; }
+.contents article.first .conWrap { width:550px; }
+.contents article.second { padding:100px 0 240px; text-align:center; }
+.contents article.third { padding:100px 0 50px; }
+
+.contents article i { text-decoration:underline; font-style:normal; }
+.contents article h1 { position:relative; padding-top:30px; margin-bottom:40px; font-size:45px; font-weight:700; color:#e96a63;}
+.contents article h1 .sub { position:absolute; top:0; display:inline-block; font-size:20px; color:#666; }
+.contents article.left h1 .sub { left:0; }
+.contents article.right h1 .sub { right:0; }
+.contents article.left h1 .sub:before,
+.contents article.center h1 .sub:before { content:""; position:absolute; bottom:2px; right:-39px; display:block; width:35px; border-bottom:1px solid #aaa; }
+.contents article.right h1 .sub:before { content:""; position:absolute; bottom:2px; left:-39px; display:block; width:35px; border-bottom:1px solid #aaa; }
+.contents article .explanation { line-height:1.5em; font-size:17px; }
+
+.bottomContent { height:800px; line-height:800px; text-align:center; font-size:35px; color:#bbb; }
+
+/* parallax background */
+.parallax-bg { position:fixed; top:0; left:50%; width:1200px; margin-left:-600px; }
+.parallax-bg span { display:block; font-size:0; text-indent:-9999px; border-radius:50%; }
+
+#parallax-bg1 { opacity:.5; z-index:1; }
+#parallax-bg1 .bg1_round01 { position:absolute; top:80px; left:-191px; width:300px; height:300px; background-color:#ddd; }
+#parallax-bg1 .bg1_round02{ position:absolute; top:480px; right:-291px; width:600px; height:600px; background-color:#eee; }
+#parallax-bg1 .bg1_round03 { position:absolute; top:1180px; left:-31px; width:250px; height:250px; background-color:#888; }
+#parallax-bg1 .bg1_round04 { position:absolute; top:1580px; right:-191px; width:400px; height:400px; background-color:#666; }
+#parallax-bg1 .bg1_round05 { position:absolute; top:680px; left:150px; width:200px; height:200px; background-color:#bbb; }
+
+#parallax-bg2 { opacity:.5; z-index:2; }
+#parallax-bg2 .bg2_round01 { position:absolute; top:400px; right:-190px; width:150px; height:150px; background-color:#fac76c; }
+#parallax-bg2 .bg2_round02 { position:absolute; top:880px; left:-80px; width:150px; height:150px; background-color:#f39863; }
+#parallax-bg2 .bg2_ball01 { position:absolute; top:1200px; right:180px; width:300px; }
+#parallax-bg2 .bg2_ball02 { position:absolute; top:1580px; right:-291px; width:600px; }
+
+#parallax-bg3 { z-index:3; }
+#parallax-bg3 .bg3_round01 { position:absolute; top:500px; right:-130px; width:150px; height:150px; background-color:#e96a63; }
+#parallax-bg3 .bg3_round02 { position:absolute; top:1417px; left:283px; width:150px; height:150px; background-color:#e96a63; }
+#parallax-bg3 .bg3_round03 { position:absolute; top:1486px; left:243px; width:80px; height:80px; background-color:#cb4333; }
+#parallax-bg3 .bg3_img01 { position:absolute; top:20px; right:-100px; }
+#parallax-bg3 .bg3_img02 { position:absolute; top:1050px; left:-100px; width:500px; }
