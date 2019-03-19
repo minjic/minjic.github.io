@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rolling Number</title>
+  <link rel="stylesheet" href="https://minjic.github.io/css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- 
+http://provide.smashingmagazine.com/graph_tut_files/ex_03.html
+
+   -->
+  <h1 class="title">Animation Graph</h1>
+
+  <article class="form">
+    <form class="form__menu" action="">
+      <p class="article__title">좋아하는 햄버거 고르기!</p>
+      <div class="form__radioWrap">
+        <label for="burger1" class="form__radioLabel"><input id="burger1" type="radio" name="menu" value="shanghai">맥스파이시상하이 버거</label>
+        <label for="burger2" class="form__radioLabel"><input id="burger2" type="radio" name="menu" value="bacon">베이컨 토마토 디럭스</label>
+        <label for="burger3" class="form__radioLabel"><input id="burger3" type="radio" name="menu" value="golden">골든에그치즈 버거</label>
+        <label for="burger4" class="form__radioLabel"><input id="burger4" type="radio" name="menu" value="double">더블 1955 버거</label>
+      </div>
+      <button type="submit" class="form__submit">투표하기</button>
+    </form>
+  </article>
+
+  <article class="graph">
+    <p class="article__title">투표 결과</p>
+    <div class="result__graph">
+      <div class="graph__xAxis">
+        <span class="value0">0</span>
+        <span class="value25">25</span>
+        <span class="value50">50</span>
+        <span class="value75">75</span>
+        <span class="value100">100</span>
+      </div>
+      <div class="graph__yAxis">
+        <span class="value0">맥스파이시상하이 버거</span>
+        <span class="value25">베이컨 토마토 디럭스</span>
+        <span class="value50">골든에그치즈 버거</span>
+        <span class="value75">더블 1955 버거</span>
+      </div>
+      <div class="graph__value">
+        <div class="graph__value--element graph__value0">
+          <span class="graph__bar"><span class="graph__number">123</span></span>
+        </div>
+        <div class="graph__value--element graph__value1">
+          <span class="graph__bar"><span class="graph__number">123</span></span>
+        </div>
+        <div class="graph__value--element graph__value2">
+          <span class="graph__bar"><span class="graph__number">123</span></span>
+        </div>
+        <div class="graph__value--element graph__value3">
+          <span class="graph__bar"><span class="graph__number">123</span></span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+<script src="./js/graph.js"></script>
+<script>
+
+
+
+</script>
+
+</body>
+</html>
+
+
