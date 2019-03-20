@@ -29,10 +29,12 @@ body { background-color:#f5f5f5; }
 .graph__value { height:100%; }
 .graph__value:after { content:""; display:block; clear:both; }
 .graph__value--element { position:relative; float:left; width:25%; height:100%; }
-.graph__bar { position:absolute; bottom:0; left:35%; display:block; width:30%; margin:auto; transition:height .5s ease-in-out; transition-delay:1s; }
+.graph__value--element.on,
+.graph__value--element:hover { background-color:#f5f5f5; }
+.graph__bar { position:absolute; bottom:0; left:35%; display:block; width:30%; margin:auto; transition:height .3s ease-in; }
 .graph__value0 .graph__bar { height:0; background-color:#ffd520; }
 .graph__value1 .graph__bar { height:0; background-color:#c3151d; }
 .graph__value2 .graph__bar { height:0; background-color:#5c9100; }
 .graph__value3 .graph__bar { height:0; background-color:#f98100; }
 .graph__number { display:block; position:absolute; top:-30px; left:0; width:80%; margin:0 10% 3px; padding:3px 0; text-align:center; border:1px solid #ddd; border-radius:5px;}
-.graph__bar:hover .graph__number { background-color:#ddd; }
+.graph__value--element:hover .graph__bar .graph__number { background-color:#ddd; }

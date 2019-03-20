@@ -85,15 +85,20 @@
 .ui--list--elem {
   display:inline-block;
   margin:10px 12px 10px 0;
-  border:1px solid #629fc5;
-  border-radius:20px;
 }
 
 .ui--list--elem a { 
   display:block; 
   padding:8px 11px;
+  border:1px solid #629fc5;
+  border-radius:20px;
 }
-.ui--list--elem:nth-child(2n) {
+
+.ui--list--elem:hover a { 
+  background-color:#f5f5f5 
+}
+
+.ui--list--elem:nth-child(2n) a {
   border:1px solid #f47492;
 }
 

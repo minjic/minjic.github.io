@@ -305,6 +305,7 @@ address {
   padding:20px 20px 60px;
   background-color:rgba(255,255,255,0.8);
   font-family:'맑은고딕','Malgun Gothic','돋움',Dotum,Helvetica,'Apple SD Gothic Neo',Sans-serif;
+  border:1px solid #e8e8e8;
 }
 
 .portfolio--title {
@@ -323,6 +324,7 @@ address {
 
 .portfolio--explanation li { 
   padding-left:15px;
+  margin-bottom:3px;
 }
 
 .portfolio--explanation li:before {

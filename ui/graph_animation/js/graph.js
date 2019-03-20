@@ -63,7 +63,7 @@ const Graph = (_=>{
     const menuListCopy = menuList.concat();
     const maxElement = menuListCopy.reduce((p, c) => p.count > c.count ? p : c);
     
-    // x항목
+    // x axis
     const xAxis = document.querySelector(".graph .graph__xAxis");
     const max = Number(maxElement.count + 5);
     const unit = Number(max/4)
@@ -74,14 +74,8 @@ const Graph = (_=>{
       xAxis.appendChild(span);
     }
     
-    // bar
+    // bar graph
     const graphBar = document.querySelectorAll(".graph .graph__bar");
-    // if (init) {
-    //   console.log(init);
-    //   graphBar.forEach( v => {
-    //     v.style.height = 0;
-    //   })
-    // }
     graphBar.forEach( (v,i) => {
       v.style.height = `${Math.ceil((menuListCopy[i].count / max) * 100)}%`;
       v.querySelector(".graph__number").innerText = menuListCopy[i].count;
@@ -96,6 +90,6 @@ const Graph = (_=>{
 
   return (_ => {
     addEvent();
-    renderGraph("init");
+    setTimeout(_=>{ renderGraph()}, 100);
   })()
 })();

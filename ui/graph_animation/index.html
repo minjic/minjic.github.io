@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Rolling Number</title>
-  <link rel="stylesheet" href="https://minjic.github.io/css/reset.css">
+  <title>Animation Graph</title>
+  <link rel="stylesheet" href="https://minjic.github.io/css/style.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -34,10 +34,10 @@ http://provide.smashingmagazine.com/graph_tut_files/ex_03.html
     <div class="result__graph">
       <div class="graph__xAxis">
         <span class="value0">0</span>
-        <span class="value25">25</span>
-        <span class="value50">50</span>
-        <span class="value75">75</span>
-        <span class="value100">100</span>
+        <span class="value25">0</span>
+        <span class="value50">0</span>
+        <span class="value75">0</span>
+        <span class="value100">0</span>
       </div>
       <div class="graph__yAxis">
         <span class="value0">맥스파이시상하이 버거</span>
@@ -47,28 +47,38 @@ http://provide.smashingmagazine.com/graph_tut_files/ex_03.html
       </div>
       <div class="graph__value">
         <div class="graph__value--element graph__value0">
-          <span class="graph__bar"><span class="graph__number">123</span></span>
+          <span class="graph__bar"><span class="graph__number">0</span></span>
         </div>
         <div class="graph__value--element graph__value1">
-          <span class="graph__bar"><span class="graph__number">123</span></span>
+          <span class="graph__bar"><span class="graph__number">0</span></span>
         </div>
         <div class="graph__value--element graph__value2">
-          <span class="graph__bar"><span class="graph__number">123</span></span>
+          <span class="graph__bar"><span class="graph__number">0</span></span>
         </div>
         <div class="graph__value--element graph__value3">
-          <span class="graph__bar"><span class="graph__number">123</span></span>
+          <span class="graph__bar"><span class="graph__number">0</span></span>
         </div>
       </div>
     </div>
   </article>
 
 <script src="./js/graph.js"></script>
-<script>
 
+  <aside class="portfolio--popup">
+    <h1 class="portfolio--title">#Animation Graph #Vote #PC</h1>
+    <ul class="portfolio--explanation">  
+      <li>투표 결과에 따라 그래프 값 변경 및 관련 애니메이션<br/>(y축 레이블 변경 및 막대그래프 높이 변경)</li>
+      <li>애니메이션 효과 위해 각 항목별 기본값 지정</li>
+      <li><a href="https://github.com/minjic/minjic.github.io/blob/master/ui/graph_animation/js/graph.js" class="section--link" target="_blank">JavaScript Code 보기</a></li>
+    </ul>
+    <div class="portfolio--back"><a href="../index.html">Back to List</a></div>
+    <div class="portfolio--close">close</div>
+  </aside>
 
-
-</script>
-
+  <script src="https://minjic.github.io/js/common.js"></script>
+	<script>
+		if (mobileCheck) mobileCheck();
+	</script>
 </body>
 </html>
 
